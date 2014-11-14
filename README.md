@@ -29,13 +29,13 @@ into aers/demos, and all of the REAC\*.TXT files should go into aers/reactions.
 
 If you have not done so already, load the input data into the Hadoop cluster:
 
-	hdfs dfs -mkdir aers
-	hdfs dfs -mkdir aers/drugs
-	hdfs dfs -put DRUG*.TXT aers/drugs
-	hdfs dfs -mkdir aers/demos
-	hdfs dfs -put DEMO*.TXT aers/demos
-	hdfs dfs -mkdir aers/reactions
-	hdfs dfs -put REAC*.TXT aers/reactions
+	hadoop fs -mkdir aers
+	hadoop fs -mkdir aers/drugs
+	hadoop fs -put DRUG*.TXT aers/drugs
+	hadoop fs -mkdir aers/demos
+	hadoop fs -put DEMO*.TXT aers/demos
+	hadoop fs -mkdir aers/reactions
+	hadoop fs -put REAC*.TXT aers/reactions
 
 Each of these commands should be run from the project's top-level directory,
 i.e., the directory that contains this README file.
