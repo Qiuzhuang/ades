@@ -31,19 +31,19 @@
  * function are the same, except we specify the target confidence level as
  * the first argument-- in this case, 0.05.
  */
-REGISTER 'target/ades-0.1.0-jar-with-dependencies.jar';
+REGISTER target/ades-0.1.0-jar-with-dependencies.jar;
 DEFINE EBGM com.cloudera.science.pig.EBGM(
-    '6.810308e-07',
-    '2.364503e-01',
-    '2.499492e-04',
-    '3.896551e+00',
-    '1.000000e+00');
+    '9.386857e+00',
+    '1.539585e-03',
+    '5.182164e-06',
+    '6.390573e-01',
+    '1.425013e-10');
 DEFINE EB05 com.cloudera.science.pig.EBCI('0.05',
-    '6.810308e-07',
-    '2.364503e-01',
-    '2.499492e-04',
-    '3.896551e+00',
-    '1.000000e+00');
+    '9.386857e+00',
+    '1.539585e-03',
+    '5.182164e-06',
+    '6.390573e-01',
+    '1.425013e-10');
 
 /**
  * Apply the same filtering criteria we did to the data in step 3.
